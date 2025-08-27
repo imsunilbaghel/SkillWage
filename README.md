@@ -107,5 +107,75 @@ node server.js
 
 <br>
 
+<table align="center" style="border: 0 px">
+  <tr style="border: 0 px">
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=1GODJyeSUkhGiL-Hb-yMTDMLyqPjvYmRT" 
+           alt="Customer HomePage - Send Service Request" 
+            width="100%" />
+      <br>
+      <b>Customer HomePage - Send Service Request</b>
+    </td>
+  </tr>
+</table>
 
+<br>
 
+<table align="center" style="border: 0 px">
+  <tr style="border: 0 px">
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=17Abga5TocoaSoacD9RbUg1lyv9P1Ji52" 
+           alt="Customer HomePage - View Send Request" 
+            width="100%" />
+      <br>
+      <b>Customer HomePage - View Send Requests</b>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center" style="border: 0 px">
+  <tr style="border: 0 px">
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=12k-2t3iAgaUrvhFteyZVk6icw-0xUvtD" 
+           alt="Customer can View Worker Profile" 
+            width="100%" />
+      <br>
+      <b>Customer can View Worker Profile</b>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center" style="border: 0 px">
+  <tr style="border: 0 px">
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=11bb5tYrzO8l8JNZZ7tTB42jOAPpkY8C5" 
+           alt="Post Requirement" 
+            width="100%" />
+      <br>
+      <b>Post Requirement</b>
+    </td>
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=1pFLTs_KkpoFc_pWBakWR6CpcBH-FJHcL" 
+           alt="Registration Screen" 
+            width="100%" />
+      <br>
+      <b>Registration Screen</b>
+    </td>
+  </tr>
+</table>
+
+<table align="center" style="border: 0 px">
+  <tr style="border: 0 px">
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=1Ibfxx1d_rVM2G5IV2BEtq4zoSXn3mjbY" 
+           alt="Worker HomePage - View Requests" 
+            width="100%" />
+      <br>
+      <b>Worker HomePage - View Requests</b>
+    </td>
+  </tr>
+</table>

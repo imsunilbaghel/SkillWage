@@ -33,8 +33,8 @@ const io = new Server(server);
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', 
-    password: 'Absus@987',
-    database: 'dailyrozgaar'
+    password: '',
+    database: 'skillwage'
 });
 
 db.connect(err => {

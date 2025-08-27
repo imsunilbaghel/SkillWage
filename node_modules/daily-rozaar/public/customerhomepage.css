@@ -1,0 +1,1375 @@
+#service, #profile, #posting {
+  display: none;
+}
+
+  @media (min-width: 250px) and (max-width: 991px) 
+  {
+
+    .navbar-toggler,.collapsed {
+        visibility: hidden; 
+        pointer-events: none; 
+    }
+
+
+    .navbar-collapse {
+        display: flex !important; 
+        justify-content: center !important; 
+        align-items: center !important; 
+        flex-wrap: wrap !important;
+        border-top: 2px solid black;
+    }
+
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        margin: auto !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        margin-top: 2vh !important;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 0 10px; 
+        flex: 0 1 auto;
+    }
+
+    .nav-link {
+        padding: 5px 10px !important; 
+        font-size: 16px !important;
+        margin-top: 5px !important;
+        max-width: 600px !important;
+    }
+
+
+  }
+
+#posting{
+  background-color: #f4f2ee;
+  color:black;
+  min-height: 69vh !important;
+  max-width: 100% !important;
+}
+  #postingform{
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border: 1px solid #ced4da;
+  }
+  #posting_description:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #ced4da !important; /* Bootstrap default border */
+  }
+
+  #posting_description{
+    margin-top: 20px;
+  }
+  .post-file-label {
+    display: flex;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    font-family: 'Helvetica',sans-serif;
+    color: #495057;
+    font-size:1rem;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 0px !important;
+
+}
+.post-file-label i{
+margin-top: 0px !important;
+font-size: 1rem;
+margin-right: 5px !important;
+color: #67AE6E;
+
+}
+#inputState {
+padding-left: 2rem; /* Give space for icon */
+background-image: url('https://cdn-icons-png.flaticon.com/512/126/126472.png'), /* You can use a custom image/icon */
+linear-gradient(45deg, transparent 50%, black 50%), /* Down arrow */
+  linear-gradient(-45deg, transparent 50%, black 50%);
+background-position: 
+  10px center,                 /* Gear icon */
+  calc(100% - 15px) center,    /* Arrow part 1 */
+  calc(100% - 10px) center;    /* Arrow part 2 */
+background-size: 
+  16px 16px, 
+  5px 5px, 
+  5px 5px;
+background-repeat: no-repeat;
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+}
+#inputState:focus{
+box-shadow: none !important;
+    outline: none !important;
+    border-color: #ced4da !important; 
+}
+.PostingSubmitButton{
+background-color: #0a66c2 !important;
+color: white !important;
+transition: background-color 0.8s ease, opacity 0.8s ease;
+}
+.PostingSubmitButton:disabled:hover {
+  background-color: #7ba8d6 !important; /* faded blue */
+  cursor: not-allowed;
+}
+.PostingSubmitButton:disabled {
+  background-color: #7ba8d6 !important; /* faded blue */
+  cursor: not-allowed;
+}
+.PostingSubmitButton:focus,
+.PostingSubmitButton:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.PostingSubmitButton:hover{
+  background-color: #054788 !important;
+}
+.PostingButtons{
+margin-top: 15px !important;
+margin-bottom: 20px;
+padding: 0px !important;
+}
+#posting_description{
+margin-top: 20px;
+width: 105% !important;
+}
+.DescriptionDiv{
+padding: 0px !important;
+display: flex;
+}
+.PostingDiv{
+width:40% !important;
+padding: 10px;
+}
+.ViewPosting{
+width:41% !important;
+margin: auto;
+padding-bottom: 20px !important;
+}
+.PostingBox{
+background-color: white;
+border-radius: 10px;
+margin: auto;
+align-items: center;
+font-family: "Poppins", sans-serif;
+margin-top: 2rem !important;
+margin-bottom: 3rem !important;
+border: 1px solid #ced4da;
+}
+.custom-close-btn{
+  margin-right: 10px !important;
+}
+
+.posting_image{
+width:110% !important;
+margin: auto;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.custom-close-btn{
+background-color: transparent;
+border: none;
+font-size: 2rem;
+line-height: 1;
+padding: 0.15rem 0.5rem;
+border-radius: 50%;
+color: black;
+transition: all 0.3s ease;
+}
+.callbutton{
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 0.2rem 0.8rem;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.3s ease;
+  }
+.callbutton:hover{
+  background-color: #0118D8;
+  color: white;
+}
+.callbutton i{
+  font-size: 1.3rem !important;
+}
+.custom-close-btn:hover{
+background-color: red;
+color: white;
+} 
+.posting_image{
+border: none !important;
+outline: none !important;
+}
+.img-thumbnail{
+object-fit: cover !important;
+width: 50px !important;
+height: 50px !important;
+border-radius: 50% !important;
+margin-left: 20px;
+}
+.dateofposting{
+font-size: 0.8rem;
+color: #676768 ;
+
+}
+#inputState{
+  border: 1.5px solid #dee2e6 !important;
+}
+.userprofilebox{
+  background-color: white !important;
+  border-radius: 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 20px 30px !important;
+  margin: auto;
+}
+.userprofilebox .topper{
+  background-image: url('image/profilebackground2.jpg') !important;
+  background-size: cover; /* or "contain", depending on what you want */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5); /* white layer with 0.1 opacity */
+  background-blend-mode: multiply;
+  border-radius: 15px !important;
+}
+.preview-container img {
+
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 5px solid white;
+	object-fit: cover;
+  margin-bottom: 10px !important;
+}
+#imagePreviewContainer{
+  display: flex;
+  position: relative;
+}
+.editbutton button{
+  background-color: white;
+  color: #000000 !important;
+  padding: 5px 0px !important;
+  width: 60%;
+  border-radius: 10px !important;
+}
+.editbutton button:hover{
+  background-color: #212121;
+  color: white !important;
+}
+.editbutton button i{
+  color: #000000;
+  left :0px !important;
+}
+.editbutton button:focus,button::after {
+  background-color: #212121 !important;
+  color: white !important;
+}
+.editbutton button:hover i{
+  color: white !important;
+  left: 0px !important;
+  right: 0px !important;
+}
+.editbutton button:focus i{
+  color: white !important;
+  left: 0px !important;
+  right: 0px !important;
+}
+#imageError{  
+  color:white; 
+  font-size: 0.9em; 
+  margin-top: 0.5em;
+  background-color: black;
+  padding: 5px 15px !important;
+  border-radius: 10px;
+  display: none;
+}
+.userprofilebox .col-12{
+    padding: 20px;
+}
+.userprofilebox .middle,.bottom{
+  border: 1px solid #C5C5C5;
+  margin: auto !important;
+  margin-top: 20px !important;
+  border-radius: 20px;
+}
+.middle p,.bottom p{
+  margin-bottom: 1rem !important;
+  font-weight: 700 ;
+  font-size: 1.1rem !important;
+}
+.userprofilebox label{
+  color:#636363 !important;
+}
+.userprofilebox input,select{
+  color: black;
+  font-weight: 500 !important;
+}
+.userprofilebox input:disabled,select:disabled{
+  background-color: white !important;
+  padding: 0px !important;
+  border: none !important;
+}
+#uploadHint{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color:white; 
+    font-size: 1em;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    display: none;
+}
+#nopoststatus[data-hi]{
+  font-weight: 600;
+}
+#service .toggle-group{
+  border: 1px solid #5a5a5a;
+}
+@media (min-width: 250px) and (max-width: 450px)
+  {
+      .nav-link,.nav-link i{
+          font-size: 0.8rem !important;
+      }
+      .navbar{
+          margin:10px 10px !important;
+      }
+  }
+      
+ 
+
+  @media (min-width: 250px) and (max-width: 576px)
+  {
+
+    .nav-item{
+      width: 40% !important;
+      font-size: 1rem !important;
+    }
+    .navbar-nav{
+      width: 100% !important;
+    }
+    .card{
+      width: 90% !important;
+      max-width: 350px !important;
+      padding: 0rem 0rem !important;
+    }
+    .profilebox,.customerrequestbox{
+      width:320px !important; 
+      
+    }
+    .profilebox{
+      margin-bottom: 3vh !important;
+    }
+    .profilebox img{
+        max-width: 90px !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+
+    }
+    .profileboximgdiv{
+      width: 90px !important;
+    }
+    .col-7{
+      width: calc(100% - 140px) !important; 
+      margin-left: 35px !important;
+      padding-right: 0px !important;
+    }
+    .ratingandchargediv p{
+      font-size: 0.8rem !important;
+    }
+    .ratingandchargediv .col-5{
+      width: 70px !important;
+    }
+    .ratingandchargediv .col-6{
+      width: 80px !important;
+    }
+    .modal-dialog{
+      max-width: 100% !important;
+    }
+    .modal-dialog img{
+      width: 150px !important;
+      border: 5px !important;
+    }
+    .modal-dialog th,td{
+      font-size: 0.8rem !important;
+    }
+    #buttonareaprofile{
+      
+      justify-content: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px;
+    }
+    .sendrequest,.contactbutton{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    table th {
+        width: 80px !important;
+    }
+    .requestshowrow{
+      gap:20px !important;
+    }
+    #postingform{
+      width:100% !important;
+      border-radius: 10px;
+      padding: 20px;
+      }
+      #posting_description{
+      margin-top: 10px;
+      }
+      .PostingButtons{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      gap: 10px;
+      }
+      .PostingButtons .col-4{
+        width: 50% !important;
+        margin-bottom: 5px !important;
+      }
+      .PostingDiv{
+      width: 100% !important;
+      }
+      .PostingBox{
+      margin-top: 10px !important;
+      }
+      .ViewPosting{
+      width: 90% !important;
+      }
+      .col-9{
+      display: block !important;
+      margin: auto !important;
+      width: 90% !important;
+      }
+      .viewallposttext
+      {
+      width: 100% !important;
+      text-align: center;
+      }
+      .viewallposttext p{
+        margin-bottom: 0px !important;
+      }
+      .toggle-group {
+        width: 80% !important;
+      }
+      #servicecategory{
+        height: 100% !important;
+      }
+      .pendingstatus,.acceptedstatus,.servicecharge,.completedstatus{
+        overflow: visible !important;
+        max-width: 80px !important;
+      }
+      .occupation-text{
+        margin-left: 5px !important;
+        max-width: 80px !important;
+        min-width: 80px !important;
+        width: 80px !important;
+      }
+      .userprofilebox{
+        width: 90% !important;
+        margin: auto !important;
+      }
+      .container-fluid:has(> .userprofilebox) {
+        margin: auto !important;
+        overflow-x: hidden !important;
+      }
+      .editbutton button{
+        width: 50% !important;
+      }
+      
+      .preview-container img{
+        width: 180px !important;
+        height: 180px !important;
+      }
+      .col-sm-3:has(> label[for="fullName"],label[for="phoneNumber"],label[for="dob"],label[for="ServiceCharge"],label[for="zip"],label[for="state"],label[for="city"],label[for="subdivision"]) {
+        width:50% !important; /* or any style you want */
+      }
+      .col-sm-12:has(> label[for="address1"]) {
+        width:100% !important; /* or any style you want */
+      }
+      .col-sm-3:has(>input:not([disabled]),select:not([disabled]), input:focus:not([disabled]), > select:focus:not([disabled])) {
+        width: 100% !important;
+      }
+      .col-sm-4:has(> label[for="fullName"],label[for="phoneNumber"],label[for="email"])
+      {
+        width: 50% !important;
+      }
+      .col-sm-4:has(>input:not([disabled]),input:focus:not([disabled])) {
+        width: 100% !important;
+      }
+      #profileshow h2 {
+        position: relative !important; /* remove absolute */
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px !important;
+        margin-top: 10px;
+        display: block;
+        font-size: 1.2rem !important;
+      }
+      .heading-text {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #sorting{
+        width: 220px !important;
+        font-weight: 500;
+      }
+      #profileshow{
+        padding-top: 50px !important;
+      }
+
+  }
+  @media (min-width: 577px) and (max-width: 767.2px)
+  {
+    .editbutton{
+      width: 180px !important;
+    }
+    .custom-column{
+      width: 50% !important;
+    }
+    .custom-column2{
+      width: 33% !important;
+    }
+    .card{
+      width: 90% !important;
+      width: 240px !important;
+      padding: 0.4rem 0.4rem !important;
+    }
+    .card-title{
+      font-size: 2rem !important;
+    }
+    .profileshowrow,.viewrequestrow{
+      padding: 0px 15px !important;
+      gap:10px !important;
+    }
+    .requestshowrow{
+      gap:20px !important;
+    }
+    .profilebox,.customerrequestbox{
+      width:330px !important;
+      margin-bottom: 2rem !important; 
+      
+    }
+    .profilebox img{
+      max-width: 100px !important;
+      max-height: 100% !important;
+      object-fit: cover !important;
+      display: inline-block !important;
+      
+  }
+  .profileboximgdiv{
+    width: 100px !important;
+  }
+  .col-7{
+    width: calc(100% - 140px) !important; 
+    margin-left: 35px !important;
+    padding-right: 0px !important;
+  }
+  .ratingandchargediv p{
+    font-size: 0.9rem !important;
+  }
+  .ratingandchargediv .col-5{
+    width: 80px !important;
+  }
+  .ratingandchargediv .col-6{
+    width: 90px !important;
+  }
+    .modal-dialog{
+      max-width: 80% !important;
+    }
+    .modal-dialog img{
+      width: 150px !important;
+    }
+    .card{
+        width: 90% !important;
+        max-width: 250px !important;
+        padding: 0rem 0rem !important;
+        
+      }
+      .modal-dialog th,td{
+        font-size: 0.9rem !important;
+      }
+      .PostingDiv,.ViewPosting{
+        width:80% !important;
+        border-radius: 10px;
+        padding: 10px;
+        }
+        #postingform{
+        width: 100% !important;
+        border-radius: 10px;
+        
+        }
+          .PostingBox{
+          margin-top: 10px !important;
+          
+          }
+        .PostingButtons{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 0px !important;
+        }
+        #posting_description{
+        margin-top: 20px;
+        width: 105% !important;
+        }
+        .DescriptionDiv{
+        padding: 0px !important;
+        display: flex;
+        }
+        .dividerline{
+        width: 80% !important;
+        }
+        .viewallposttext{
+        width: 30% !important;
+        }
+        .dividerline .col-9{
+        width: 70% !important;
+        }
+        .nav-item{
+          width: 20% !important;
+        }
+        .navbar-nav{
+          width: 100% !important;
+        }
+        .toggle-group {
+          width: 80% !important;
+        }
+        #servicecategory{
+          height: 100% !important;
+        }
+      .occupation-text{
+        min-width: 60px !important;
+        margin-left: 10px !important;
+      }
+      .userprofilebox{
+        width: 80% !important;
+      }
+      .editbutton button{
+        width: 85% !important;
+      }
+      
+      .preview-container img{
+        width: 180px !important;
+        height: 180px !important;
+      }
+      .col-sm-4:has(> label[for="fullName"],label[for="phoneNumber"],label[for="email"])
+      {
+        width: 50% !important;
+      }
+      .col-sm-3:has(> label[for="dob"]) {
+        width:50% !important; /* or any style you want */
+      }
+      .col-sm-3:has(> label[for="ServiceCharge"]) {
+        width:50% !important; /* or any style you want */
+      }
+      .col-sm-3:has(> label[for="zip"],label[for="state"],label[for="city"]) {
+        width:33.3% !important; /* or any style you want */
+      }
+      .col-sm-3:has(> label[for="subdivision"]) {
+        width:50% !important; /* or any style you want */
+      }
+      .col-sm-12:has(> label[for="address1"]) {
+        width:50% !important; /* or any style you want */
+      }
+      #profileshow h2 {
+        position: relative !important; /* remove absolute */
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px !important;
+        margin-top: 10px;
+        display: block;
+      }
+      .heading-text {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #sorting{
+        width: 220px !important;
+      }
+  
+  }
+  @media (min-width: 768px) and (max-width: 991px)
+  {
+    .card{
+      width: 90% !important;
+      width: 320px !important;
+      padding: 0.4rem 0.4rem !important;
+    }
+    .nav-item{
+      width: 20% !important;
+    }
+    .navbar-nav{
+      width: 100% !important;
+    }
+    .profilebox,.customerrequestbox{
+      width: 340px !important;
+    }
+    .profilebox img{
+      max-width: 100px !important;
+      max-height: 100% !important;
+      object-fit: cover !important;
+      display: inline-block !important;
+
+    }
+    .profileboximgdiv{
+      width: 100px !important;
+    }
+    .col-7{
+      width: calc(100% - 140px) !important; 
+      margin-left: 35px !important;
+      padding-right: 0px !important;
+    }
+    .ratingandchargediv p{
+      font-size: 1rem !important;
+    }
+    .ratingandchargediv .col-5{
+      width: 80px !important;
+    }
+    .ratingandchargediv .col-6{
+      width: 90px !important;
+    }
+    .profileshowrow,.viewrequestrow{
+      gap:30px !important;
+    }
+    .modal-dialog{
+      max-width: 60% !important;
+    }
+    .modal-dialog img{
+      width: 170px !important;
+    }
+    .requestshowrow{
+      gap:20px !important;
+    }
+    .PostingDiv,.ViewPosting{
+      width:60% !important;
+      border-radius: 10px;
+      padding: 10px;
+      }
+      #postingform{
+      width: 100% !important;
+      border-radius: 10px;
+      
+      }
+      .PostingButtons{
+      margin-top: 15px;
+      margin-bottom: 20px;
+      padding: 0px !important;
+      }
+      #posting_description{
+      margin-top: 20px;
+      width: 105% !important;
+      }
+      .DescriptionDiv{
+      padding: 0px !important;
+      display: flex;
+      }
+      .dividerline{
+      width: 60% !important;
+      }
+      .viewallposttext{
+      width: 40% !important;
+      }
+      .dividerline .col-9{
+      width: 60% !important;
+      }
+      .toggle-group {
+        width: 80% !important;
+      }
+      #servicecategory{
+        height: 100% !important;
+      }
+      .userprofilebox{
+        width: 88% !important;
+      }
+      .editbutton button{
+        width: 85% !important;
+      }
+      
+      .preview-container img{
+        width: 180px !important;
+        height: 180px !important;
+      }
+      .col-sm-3:has(> label[for="dob"]) {
+        width:21% !important; /* or any style you want */
+      }
+      .col-sm-3:has(> label[for="ServiceCharge"]) {
+        width:29% !important; /* or any style you want */
+      }
+      #sorting{
+        width: 150px !important;
+      }
+      #profileshow h2 {
+        position: relative !important; /* remove absolute */
+        left: auto !important;
+        transform: none !important;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px !important;
+        margin-top: 10px;
+        display: block;
+      }
+      .heading-text {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #sorting{
+        width: 220px !important;
+      }
+  }
+  @media (min-width:992px) and (max-width:1142px) {
+    .card{
+      width: 90% !important;
+      max-width: 360px !important;
+      padding: 0.4rem 0rem !important;
+    }
+    .profilebox,.customerrequestbox{
+      width: 380px !important;
+      margin-top: 2rem !important;
+    }
+    .profileshowrow,.viewrequestrow{
+      gap:30px !important;
+    }
+    .profilebox img{
+      max-width: 110px !important;
+      max-height: 100% !important;
+      object-fit: cover !important;
+      display: inline-block !important;
+
+    }
+    .profileboximgdiv{
+      width: 110px !important;
+    }
+    .col-7{
+      width: calc(100% - 150px) !important; 
+      margin-left: 35px !important;
+      padding-right: 0px !important;
+    }
+    .ratingandchargediv p{
+      font-size: 1rem !important;
+    }
+    .ratingandchargediv .col-5{
+      width: 80px !important;
+    }
+    .ratingandchargediv .col-6{
+      width: 90px !important;
+    }
+    .modal-dialog{
+      max-width: 60% !important;
+    }
+    .requestshowrow{
+      gap:30px !important;
+    }
+    .PostingDiv,.ViewPosting{
+      width:60% !important;
+      border-radius: 10px;
+      padding: 10px;
+      }
+      #postingform{
+      width: 100% !important;
+      border-radius: 10px;
+      
+      }
+      .PostingButtons{
+      margin-top: 15px;
+      margin-bottom: 20px;
+      padding: 0px !important;
+      }
+      #posting_description{
+      margin-top: 20px;
+      width: 105% !important;
+      }
+      .DescriptionDiv{
+      padding: 0px !important;
+      display: flex;
+      }
+      .dividerline{
+      width: 60% !important;
+      }
+      .viewallposttext{
+      width: 30% !important;
+      }
+      .dividerline .col-9{
+      width: 70% !important;
+      }
+      .toggle-group {
+        width: 80% !important;
+      }
+      #servicecategory{
+        height: 100% !important;
+      }
+      .editbutton button{
+        width: 100% !important;
+      }
+      .col-sm-3:has(> label[for="dob"]) {
+        width:22% !important; /* or any style you want */
+      }
+      .col-sm-3:has(> label[for="ServiceCharge"]) {
+        width:28% !important; /* or any style you want */
+      }
+      
+    
+  }
+  
+
+  #profile{
+    background-color: #e7e9ea;
+  }
+  input:disabled {
+    background-color: #e9ecef  !important;
+    cursor: not-allowed; 
+  }
+  #cancelButton{
+    
+    box-shadow: none;
+    background-color:rgb(233, 4, 4);
+    display: none;
+  }
+  #cancelButton:hover{
+    background-color: rgb(255, 0, 0) !important;
+  }
+  
+  #submitButton{
+    display: none;
+    box-shadow: none;
+  }
+  #backbutton{
+    border: none;
+    padding: 0px;
+    background-color:#F5F5F7 ;
+  }
+  #backbutton i{
+    margin-top:50% !important;
+    font-size: 2rem !important;
+  }
+  #profileshow{
+    background-color: #F5F5F7;
+    padding: 10vh 5vw;
+    min-height: 70vh;
+  }
+  .heading-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .profilebox{
+    background-color: #1F2937;
+    border-radius: 10px;
+    margin: auto;
+    width:330px;
+    margin-top: 4vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    margin-top: 2.5rem !important;
+  }
+  .profilebox img{
+    object-fit: cover !important;
+    border-radius: 10px;
+    width: 110px;
+    height: 110px;
+    border: 1px solid rgb(186, 179, 179) !important;
+  }
+
+  .profilebox .workernaming{
+    font-weight: 600;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Suppress warning */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left !important;
+  }
+  .profilebox p{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .customerrequestname{
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  table th {
+      width: 140px;
+  }
+
+  body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .otherlink.active {
+      background-color: black !important;
+      color: white !important;
+  }
+  .otherlink.active:hover{
+      background-color: black !important;
+      color: white !important;
+      border: 2px solid black !important;
+  }
+
+  .logout-button{
+    background-color: white !important;
+      color: black !important;
+      border: 2px solid black !important;
+    
+      
+  }
+  .logout-button i{
+      font-size: 1rem;
+      -webkit-text-stroke: 0.5px;
+      margin-left: 5px;
+      margin-top: 0px !important;
+      
+  }
+  .logout-button:hover{
+      background-color: red !important;
+      color: white !important;
+      box-shadow: none !important;
+      border:2px solid red !important;
+    
+  }
+
+  .otherlink:hover{
+      border: 2px solid #0A5EB0 !important;
+      background-color: #0A5EB0 !important;
+      color: white !important;
+      box-shadow: none;
+  }
+  .card{
+    padding: 0.2rem 0rem !important;
+    border-radius: 10px !important;
+    
+    transition: all 0.3s ease;
+    max-width: 440px !important;
+  }
+
+  .card-title{
+    font-family: "Plus Jakarta Sans", sans-serif ;
+    font-weight: 600;   
+    text-align: left !important;
+  }        
+
+  .card img{
+    border-radius: 10%;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px 0px;
+    width:70% !important;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+
+  #servicecategory{
+    background-color:#00245c;
+    padding-left: 50px;
+    padding-right: 50px;
+    scroll-margin: 14vh;
+    padding-top: 5vh;
+    padding-bottom: 4vh; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 100%;
+    padding-top: 50px;
+    min-height: 53.4vh;
+  }
+
+  #servicecategory p{
+    text-align: center; 
+    font-weight: 800;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    color: white;
+  }
+
+  #profileshow h2{
+    text-align: center; 
+    margin-bottom:4vh;
+    font-weight: 600;
+
+  }
+
+
+  .sendrequest{
+    background-color: rgb(161, 255, 20) !important;
+    color: #000000 !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-weight: 600 !important;
+  }
+  .contactbutton{
+    background-color: #4169e1 !important;
+    color: white !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-weight: 600 !important;
+  }
+  .cancelrequest{
+    background-color: rgb(238, 0, 0) !important;
+    color: white !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-weight: 600 !important;
+  }
+ .acceptedrequest{
+  background-color: #00be16 !important;
+  color: white !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 600 !important;
+ }
+
+  .contactbutton i,.cancelrequest i,.rejectbutton i,.sendrequest i,.acceptedrequest i{
+    margin-right: 5px !important;
+  }
+
+
+
+  .viewprofile{
+    background-color: #ADFF00 !important;
+    color: black !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  #requests{
+    background-color:#e8e8e8;
+    padding-left: 50px;
+    padding-right: 50px;
+    scroll-margin: 14vh;
+    padding-top: 5vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-bottom: 50vh;
+  }
+  .acceptbutton{
+    background-color: #118B50 !important; 
+    Color:white !important;
+    border:none !important;
+    font-weight: 500 !important;
+  }
+  .rejectbutton{
+    background-color: red !important; 
+    Color:white !important;
+    border:none !important;
+    font-weight: 500 !important;
+    margin-left: 10px;
+  }
+
+.customerrequestbox{
+    margin: auto;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, #242424 100%);
+    color: white; 
+    padding:3vh 0vh;
+    border-radius: 20px;
+  }
+  .customerrequestbox img{
+    background-color: white;
+  }
+  .deleterequestbutton{
+    color: rgb(189, 189, 189) !important;
+    top:-10px !important;
+    right: 3px !important;
+    border: none !important;
+  }
+  .deleterequestbutton:hover{
+    color: rgb(255, 255, 255) !important;
+  }
+  .deleterequestbutton:active{
+    color: white !important;
+    border: none !important;
+    outline: none !important;
+  }
+
+  .pendingstatus,.acceptedstatus,.nostatus,.occupation-text,.completedstatus{
+    font-size: 0.8rem !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+  }
+
+  .pendingstatus{
+    background-color:#FF9B17;
+    color: white;
+    display: inline-block !important;
+    padding: 0px 10px !important;
+    border-radius: 20px !important;
+    width: 70px !important;
+    
+
+  }
+  .occupation-text {
+    background-color: white;
+    color: black;
+    display: inline-block !important;
+    padding: 0px 10px !important; /* Adjust padding for better alignment */
+    border-radius: 20px !important;
+    width: auto !important; /* Allow the width to adjust based on content */
+    width: 90px !important;
+    margin-left: 20px; /* Prevent text from being squished */
+  }
+  .pendingstatus[data-hi],.acceptedstatus[data-hi],.nostatus[data-hi],.occupation-text[data-hi],.completedstatus[data-hi]{
+   
+    font-weight: 500;
+  }
+  
+
+  .acceptedstatus{
+    background-color:#328E6E;
+    color: white !important;
+    display: inline-block !important;
+    padding: 0px 10px !important;
+    border-radius: 20px !important;
+    width: 77px !important;
+    overflow: visible !important;
+  }
+  .completedstatus{
+    background-color:#3A59D1;
+    color: white !important;
+    display: inline-block !important;
+    padding: 0px 10px !important;
+    border-radius: 20px !important;
+    width: 77px !important;
+    overflow: visible !important;
+  }
+
+  .noprofilestatus{
+    color:#F93827;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 50px !important;
+  }
+
+
+.bi-star-fill{
+  color:#FFC25E;
+}
+.profilebox .col-12 .col-5,.col-6{
+  background-color: white !important;
+  color: black !important;
+  border-radius: 10px !important;
+}
+.profilebox .col-7{
+  margin-top: 10px !important;
+}
+.online-offline-status
+{
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+  /* background-color: red !important; */
+  display: inline-block !important;
+}
+.online {
+  background-color: green !important;
+
+}
+
+.offline {
+  background-color: red !important;
+}
+.bi-cash-stack{
+  color: #328E6E;
+}
+
+
+.ratingbutton {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0px 0 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  background-color: #4335A7 !important; /* Default purple */
+}
+
+/* RATED */
+.ratingbutton.rated-success {
+  background-color: #1B56FD !important; /* Green */
+}
+
+/* DISABLED UNRATED */
+.ratingbutton:disabled:not(.rated-success) {
+  background-color: #f2f2f2 !important;
+  color: #a1a1a1 !important;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* DISABLED RATED */
+.ratingbutton.rated-success:disabled {
+  background-color: #1B56FD !important;
+  color: white !important;
+  cursor: not-allowed;
+  opacity: 1 !important;
+}
+.viewrequestrow{
+  gap:10px !important;
+  padding-bottom: 20px;
+}
+.viewrequestrow .profilebox .ratingandchargediv .col-5
+{
+  background-color: transparent !important;
+  color: black !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+.profileshowrow{
+  gap:10px;
+}
+
+  .star-rating .star {
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .star-rating .star.hovered,
+  .star-rating .star.selected {
+    color: #ffc107; /* Bootstrap warning color */
+  }
+
+  #sorting {
+    width: 222px;
+    background-color: #3C3C3C !important;
+    color: white;
+
+  }
+
+  #sorting i {
+    font-size: 16px; /* Icon size */
+    color: white !important;    /* Icon color */
+  }

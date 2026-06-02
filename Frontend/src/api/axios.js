@@ -2,10 +2,10 @@ import axios from "axios";
 import { toast } from "sonner";
 
 const getBaseURL = () => {
-  if (typeof window !== "undefined" && window.location) {
-    const { hostname } = window.location;
-    return `http://${hostname}:8080/api`;
-  }
+  // if (typeof window !== "undefined" && window.location) {
+  //   const { hostname } = window.location;
+  //   return `http://${hostname}:8080/api`;
+  // }
   return import.meta.env.VITE_API_URL || "http://localhost:8080/api";
 };
 

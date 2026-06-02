@@ -4,6 +4,22 @@
   <strong>A full-stack web platform that bridges the gap between customers and skilled workers like electricians, plumbers, carpenters, painters, masons, and labourers.</strong>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/React_Router_7-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router" />
+  <img src="https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white" alt="React Query" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express_5-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/MongoDB_8-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Zod-3068B7?style=for-the-badge&logo=zod&logoColor=white" alt="Zod" />
+  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white" alt="Cloudinary" />
+</p>
+
 ---
 
 ## 📖 Table of Contents
@@ -166,12 +182,12 @@ SkillWage Full Project/
 ├── Backend/                    # Express.js REST API Server
 │   ├── src/
 │   │   ├── config/             # Database connection (MongoDB)
-│   │   ├── controllers/        # Route handler logic (14 controllers)
-│   │   ├── middlewares/        # Auth, error handling, validation
-│   │   ├── models/             # Mongoose schemas (7 models)
+│   │   ├── controllers/        # Route handler logic (15 controllers)
+│   │   ├── middlewares/        # Auth, error handling, validation (3 middleware files)
+│   │   ├── models/             # Mongoose schemas (8 models)
 │   │   ├── routes/             # Express route definitions (9 route files)
-│   │   ├── utils/              # Cloudinary upload helpers
-│   │   ├── validators/         # Zod validation schemas (5 validators)
+│   │   ├── utils/              # Cloudinary upload helpers (1 helper file)
+│   │   ├── validators/         # Zod validation schemas (6 validators)
 │   │   ├── app.js              # Express app setup (middleware, CORS, routes)
 │   │   └── server.js           # Server bootstrap (connect DB, start listening)
 │   ├── .env                    # Environment variables
@@ -181,16 +197,16 @@ SkillWage Full Project/
     ├── src/
     │   ├── api/                # Axios API service functions (11 files)
     │   ├── assets/             # Static assets
-    │   ├── components/         # Reusable UI components
-    │   │   ├── layouts/        # Page layouts (Main, App, Auth, Admin)
+    │   ├── components/         # Reusable UI components (8 files)
+    │   │   ├── layouts/        # Page layouts (4 files)
     │   │   └── ui/             # Shadcn-style primitives (13 components)
     │   ├── hooks/              # React Query hooks (9 custom hooks)
-    │   ├── lib/                # Router config, i18n setup, Zod schemas, utils
+    │   ├── lib/                # Router config, i18n setup, Zod schemas, utils (4 files/directories)
     │   ├── locales/            # Translation files (en/, hi/)
-    │   └── page/               # Page components
+    │   └── page/               # Page components (21 pages total)
     │       ├── admin/          # Admin panel pages (5 pages)
-    │       ├── app/            # Authenticated app pages (Requests, Posts, Profile)
-    │       └── auth/           # Login & Registration
+    │       ├── app/            # Authenticated app pages (10 pages)
+    │       └── auth/           # Login, Registration & Forgot Password (3 pages)
     ├── .env                    # Frontend environment variables
     ├── index.html              # Entry HTML
     ├── vite.config.js          # Vite configuration
@@ -386,7 +402,7 @@ Make sure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/imsunilbaghel/SkillWage
 cd "SkillWage Full Project"
 ```
 
@@ -557,11 +573,12 @@ npm start
 
 ## Folder Structure
 
-### Backend — Controllers (14 files)
+### Backend — Controllers (15 files)
 
 | Controller | Responsibility |
 |---|---|
 | `authController.js` | Login, logout, registration, email OTP, current user |
+| `forgotPasswordController.js` | Password recovery for Workers (via Aadhaar/DOB check) and Customers (via email OTP check) |
 | `registerController.js` | Customer & Worker registration with email verification |
 | `profileController.js` | Personal details, address, password, service charge updates |
 | `workerController.js` | Worker listing by pincode for customers |
@@ -598,7 +615,7 @@ npm start
 | `useContact.js` | Contact form submission |
 | `useLocation.js` | Pincode → address auto-lookup |
 
-### Frontend — Page Components
+### Frontend — Page Components (21 pages total)
 
 | Page | Route | Description |
 |---|---|---|
@@ -607,6 +624,7 @@ npm start
 | `Contactus.jsx` | `/contactus` | Public contact form |
 | `Login.jsx` | `/auth/login` | Dual-role login (Customer/Worker tabs) |
 | `RegistrationPage.jsx` | `/auth/register` | Dual-role registration with email OTP |
+| `ForgotPassword.jsx` | `/auth/forgot-password` | Dual-role forgot password (OTP for Customer, Aadhaar/DOB for Worker) |
 | `AppHome.jsx` | `/app` | Authenticated dashboard (role-based) |
 | `CustomerHome.jsx` | `/app` (customer) | Worker browsing by pincode |
 | `PostPage.jsx` | `/app/post` | Job post feed and creation |

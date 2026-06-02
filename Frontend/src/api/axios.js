@@ -6,7 +6,10 @@ const getBaseURL = () => {
   //   const { hostname } = window.location;
   //   return `http://${hostname}:8080/api`;
   // }
-  return import.meta.env.VITE_API_URL || "http://localhost:8080/api";
+  // return import.meta.env.VITE_API_URL || "http://localhost:8080/api";
+  // Utilizing Vercel Rewrites in production and Vite proxy in development.
+  // This ensures all requests are treated as same-origin, completely avoiding CORS and Cookie issues!
+  return "/api";
 };
 
 export const api = axios.create({

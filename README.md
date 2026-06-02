@@ -5,18 +5,37 @@
 </p>
 
 <p align="center">
+  <strong>Frontend Core</strong><br />
   <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/TailwindCSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/React_Router_7-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router" />
-  <img src="https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white" alt="React Query" />
+  <img src="https://img.shields.io/badge/React_Query_5-FF4154?style=for-the-badge&logo=react-query&logoColor=white" alt="React Query" />
 </p>
 
 <p align="center">
+  <strong>Frontend UI & Utilities</strong><br />
+  <img src="https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=react-hook-form&logoColor=white" alt="React Hook Form" />
+  <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white" alt="Zod" />
+  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" alt="Axios" />
+  <img src="https://img.shields.io/badge/i18next-26A69A?style=for-the-badge&logo=i18next&logoColor=white" alt="i18next" />
+  <img src="https://img.shields.io/badge/Radix_UI-161618?style=for-the-badge&logo=radix-ui&logoColor=white" alt="Radix UI" />
+  <img src="https://img.shields.io/badge/Lucide_React-F59E0B?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide Icons" />
+  <img src="https://img.shields.io/badge/Sonner-000000?style=for-the-badge" alt="Sonner" />
+  <img src="https://img.shields.io/badge/Vaul_Drawer-000000?style=for-the-badge" alt="Vaul" />
+  <img src="https://img.shields.io/badge/CVA-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="CVA" />
+  <img src="https://img.shields.io/badge/clsx_%26_tailwind--merge-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Clsx & TailwindMerge" />
+  <img src="https://img.shields.io/badge/tw--animate--css-F43F5E?style=for-the-badge&logo=css3&logoColor=white" alt="tw-animate-css" />
+</p>
+
+<p align="center">
+  <strong>Backend & Database</strong><br />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express_5-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/MongoDB_8-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Zod-3068B7?style=for-the-badge&logo=zod&logoColor=white" alt="Zod" />
+  <img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white" alt="Mongoose" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white" alt="JWT" />
+  <img src="https://img.shields.io/badge/Nodemailer-375A7F?style=for-the-badge" alt="Nodemailer" />
   <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white" alt="Cloudinary" />
 </p>
 

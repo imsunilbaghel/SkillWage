@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "badge": "SkillWage Platform",
+    "heading_line1": "Find & Connect With",
+    "heading_line2": "Local Workers",
+    "description": "Find and connect with professional workers in your area instantly, or post your job requirements with descriptions and photos. Connect directly via phone number with zero in-app payments or fees.",
+    "btn_register": "Register Now",
+    "btn_services": "Explore Services"
+  },
+  "badges": {
+    "badge1_title": "Find Local Workers",
+    "badge1_subtitle": "Search Workers in Your Area",
+    "badge2_title": "Direct Contact",
+    "badge2_subtitle": "Connect Directly by Phone"
+  },
+  "features": {
+    "section_badge": "How it works",
+    "section_title": "Find Nearby Workers, Direct Hiring, Simple Coordination",
+    "section_description": "Browse and connect with workers in your area, or post custom requirements with photos. Registered workers can accept requests and view client contact details to connect directly, with zero commissions or in-app fees.",
+    "card1_title": "Find Workers Nearby",
+    "card1_description": "Browse and search active, skilled workers directly in your area. Contact the right experts for your immediate home or commercial needs.",
+    "card2_title": "Post Custom Requests",
+    "card2_description": "Can't find a worker? Easily post your specific requirements with photos and descriptions. Nearby experts will see and accept your request.",
+    "card3_title": "Accept & Call Direct",
+    "card3_description": "Workers log in to accept or reject requests. Upon acceptance, they get the client's phone number to coordinate directly. No in-app payment required!"
+  },
+  "customer_home": {
+    "greeting": "Hello 👋",
+    "enter_pincode": "Enter Pincode",
+    "search_placeholder": "Search by pincode...",
+    "sort": "Sort",
+    "sort_rating_high": "Highest Rated",
+    "sort_rating_low": "Lowest Rated",
+    "sort_price_low": "Price: Low to High",
+    "sort_price_high": "Price: High to Low",
+    "promo_badge": "100% Commission-Free",
+    "promo_title": "Connect Directly with Local Workers - No Fees, No Hidden Charges",
+    "promo_button": "Explore Services",
+    "book_now": "Book Now",
+    "most_booked": "Services",
+    "view_all": "View all",
+    "popular_near": "Popular Near You",
+    "no_workers_title": "No {{service}}s found",
+    "no_workers_desc": "Try searching in a nearby pincode.",
+    "service_charge": "Service charge",
+    "reviews": "reviews",
+    "contact": "Contact",
+    "requested": "Requested",
+    "accepted": "Accepted"
+  }
+}

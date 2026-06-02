@@ -1,0 +1,39 @@
+{
+  "badge": "Our Professional Services",
+  "title_line1": "Connecting Expertise",
+  "title_line2": "With Everyday Needs",
+  "description": "SkillWage bridging the gap between highly-skilled, certified workers and customers. Whether you are ready to offer your expertise or looking to hire top-tier professionals, our platform is designed for seamless collaboration.",
+  "items": {
+    "labour": {
+      "title": "Labour",
+      "description": "perform general labor tasks such as loading / unloading goods, cleaning, and assisting in construction work."
+    },
+    "electrician": {
+      "title": "Electrician",
+      "description": "Install, repair, and maintain electrical systems and devices. They also ensure safety standards are met"
+    },
+    "plumber": {
+      "title": "Plumber",
+      "description": "Fix leaks, install water systems, maintain plumbing infrastructure, and ensure proper drainage and water flow systems"
+    },
+    "mistri": {
+      "title": "Mistri",
+      "description": "Carry out construction and repair work for buildings and structures, including tasks like bricklaying, plastering, and foundation work"
+    },
+    "painter": {
+      "title": "Painter",
+      "description": "Paint houses, offices, and commercial spaces to enhance their appearance and protect surfaces from weather damage."
+    },
+    "carpenter": {
+      "title": "Carpenter",
+      "description": "Build or repair furniture, woodwork, and home structures, including custom designs for doors and cabinets."
+    }
+  },
+  "find_button": "Find a",
+  "cta": {
+    "title": "Ready to join SkillWage?",
+    "description": "Sign up today as a Worker to connect with clients or as a Customer to find pre-vetted professionals for any home or commercial task.",
+    "get_started": "Get Started Now",
+    "sign_in": "Sign In"
+  }
+}

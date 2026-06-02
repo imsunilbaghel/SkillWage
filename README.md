@@ -1,7 +1,9 @@
-# SkillWage — Connecting Customers with Skilled Tradespeople
+# [SkillWage — Connecting Customers with Skilled Tradespeople](https://skillwage.vercel.app/)
 
 <p align="center">
-  <img src="Frontend/public/image/skillwageGitHub.png" alt="SkillWage" width="100%" />
+  <a href="https://skillwage.vercel.app/" target="_blank">
+    <img src="Frontend/public/image/skillwageGitHub.png" alt="SkillWage" width="100%" />
+  </a>
 </p>
 
 <p align="center">

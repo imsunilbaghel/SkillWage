@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { adminLoginAPI, adminLogoutAPI, adminGetMeAPI, adminGetSupportsAPI, adminUpdateSupportAPI, adminGetWorkersAPI, adminUpdateWorkerAPI, adminGetCustomersAPI, adminUpdateCustomerAPI, adminGetRequestsAPI, adminUpdateReqStatusAPI, adminGenerateReqOtpAPI } from "../api/admin";
+import { adminLoginAPI, adminLogoutAPI, adminGetMeAPI, adminGetSupportsAPI, adminUpdateSupportAPI, adminGetWorkersAPI, adminUpdateWorkerAPI, adminGetCustomersAPI, adminUpdateCustomerAPI, adminGetRequestsAPI, adminUpdateReqStatusAPI, adminGenerateReqOtpAPI, adminGetContactsAPI, adminDeleteContactAPI } from "../api/admin";
 import { toast } from "sonner";
 import { useNavigate } from "react-router";
 
@@ -183,6 +183,33 @@ export const useAdminGenerateRequestOTP = () => {
     },
     onError: (error) => {
       toast.error(error.response?.data?.message || "Failed to generate OTP");
+    },
+  });
+};
+
+// Admin Contact Hooks
+export const useAdminContacts = (filters) => {
+  return useQuery({
+    queryKey: ["adminContacts", filters],
+    queryFn: async () => {
+      const data = await adminGetContactsAPI(filters);
+      return data;
+    },
+    keepPreviousData: true,
+  });
+};
+
+export const useAdminDeleteContact = () => {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: adminDeleteContactAPI,
+    onSuccess: () => {
+      toast.success("Contact deleted successfully");
+      queryClient.invalidateQueries({ queryKey: ["adminContacts"] });
+    },
+    onError: (error) => {
+      toast.error(error.response?.data?.message || "Failed to delete contact");
     },
   });
 };

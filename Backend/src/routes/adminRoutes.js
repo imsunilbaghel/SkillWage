@@ -4,6 +4,7 @@ import { getAllSupports, updateSupportStatus } from "../controllers/adminSupport
 import { getAllWorkersForAdmin, updateWorkerDetailsForAdmin } from "../controllers/adminWorkerController.js";
 import { getAllCustomersForAdmin, updateCustomerDetailsForAdmin } from "../controllers/adminCustomerController.js";
 import { getAllRequestsForAdmin, updateRequestStatusForAdmin, generateOtpForAdmin } from "../controllers/adminRequestController.js";
+import { getAllContactsForAdmin, deleteContactForAdmin } from "../controllers/adminContactController.js";
 import { verifyAuth, isAdmin } from "../middlewares/auth.js";
 
 const router = express.Router();
@@ -34,5 +35,9 @@ router.put("/customers/:id", updateCustomerDetailsForAdmin);
 router.get("/requests", getAllRequestsForAdmin);
 router.put("/requests/:id/status", updateRequestStatusForAdmin);
 router.put("/requests/:id/otp", generateOtpForAdmin);
+
+// Contacts
+router.get("/contacts", getAllContactsForAdmin);
+router.delete("/contacts/:id", deleteContactForAdmin);
 
 export default router;

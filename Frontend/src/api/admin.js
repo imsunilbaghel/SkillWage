@@ -62,3 +62,13 @@ export const adminGenerateReqOtpAPI = async (id) => {
   const { data } = await api.put(`/admin/requests/${id}/otp`);
   return data;
 };
+
+export const adminGetContactsAPI = async (filters) => {
+  const { data } = await api.get("/admin/contacts", { params: filters });
+  return data;
+};
+
+export const adminDeleteContactAPI = async (id) => {
+  const { data } = await api.delete(`/admin/contacts/${id}`);
+  return data;
+};

@@ -22,6 +22,7 @@ import AdminSupport from "@/page/admin/AdminSupport";
 import AdminWorkers from "@/page/admin/AdminWorkers";
 import AdminCustomers from "@/page/admin/AdminCustomers";
 import AdminRequests from "@/page/admin/AdminRequests";
+import AdminContacts from "@/page/admin/AdminContacts";
 
 import ForgotPassword from "@/page/auth/ForgotPassword";
 
@@ -114,6 +115,10 @@ export const router = createBrowserRouter([
             {
                 path: "requests",
                 element: <AdminRequests />
+            },
+            {
+                path: "contacts",
+                element: <AdminContacts />
             }
         ]
     }

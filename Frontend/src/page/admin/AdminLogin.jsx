@@ -46,7 +46,7 @@ export default function AdminLogin() {
     }
 
     if (isAdminAuthenticated) {
-        const from = location.state?.from?.pathname || "/admin";
+        const from = location.state?.from?.pathname || "/admin/workers";
         return <Navigate to={from} replace />;
     }
 

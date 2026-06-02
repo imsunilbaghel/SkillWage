@@ -1,6 +1,10 @@
 # SkillWage — Connecting Customers with Skilled Tradespeople
 
 <p align="center">
+  <img src="Frontend/public/image/skillwageGitHub.png" alt="SkillWage" width="100%" />
+</p>
+
+<p align="center">
   <strong>A full-stack web platform that bridges the gap between customers and skilled workers like electricians, plumbers, carpenters, painters, masons, and labourers.</strong>
 </p>
 
@@ -127,7 +131,7 @@ Customer sends request → Worker receives it (Pending)
 - Translation files organized by namespace: `common`, `home`, `auth`, `services`.
 
 ### 📍 Pincode-based Address Lookup
-- During registration and in admin update modals, entering a 6-digit pincode automatically fetches **subdivision, city, and state** from the [India Postal Pincode API](https://api.postalpincode.in).
+- During registration and in admin update modals, entering a 6-digit pincode automatically fetches **subdivision, city, and state** from the [India Postal Pincode API](http://www.postalpincode.in/Api-Details).
 
 ### 📸 Cloud-based Image Management
 - Profile photos, Aadhaar images, post images, and support screenshots are uploaded to **Cloudinary** via signed upload.
@@ -201,7 +205,7 @@ SkillWage Full Project/
 ├── Backend/                    # Express.js REST API Server
 │   ├── src/
 │   │   ├── config/             # Database connection (MongoDB)
-│   │   ├── controllers/        # Route handler logic (15 controllers)
+│   │   ├── controllers/        # Route handler logic (16 controllers)
 │   │   ├── middlewares/        # Auth, error handling, validation (3 middleware files)
 │   │   ├── models/             # Mongoose schemas (8 models)
 │   │   ├── routes/             # Express route definitions (9 route files)
@@ -222,8 +226,8 @@ SkillWage Full Project/
     │   ├── hooks/              # React Query hooks (9 custom hooks)
     │   ├── lib/                # Router config, i18n setup, Zod schemas, utils (4 files/directories)
     │   ├── locales/            # Translation files (en/, hi/)
-    │   └── page/               # Page components (21 pages total)
-    │       ├── admin/          # Admin panel pages (5 pages)
+    │   └── page/               # Page components (22 pages total)
+    │       ├── admin/          # Admin panel pages (6 pages)
     │       ├── app/            # Authenticated app pages (10 pages)
     │       └── auth/           # Login, Registration & Forgot Password (3 pages)
     ├── .env                    # Frontend environment variables
@@ -403,6 +407,8 @@ SkillWage Full Project/
 | GET | `/requests` | List all service requests (paginated, searchable) |
 | PUT | `/requests/:id/status` | Update request status |
 | PUT | `/requests/:id/otp` | Generate OTP for an accepted request |
+| GET | `/contacts` | List all contact messages (paginated) |
+| DELETE | `/contacts/:id` | Delete a contact message |
 
 ---
 
@@ -592,7 +598,7 @@ npm start
 
 ## Folder Structure
 
-### Backend — Controllers (15 files)
+### Backend — Controllers (16 files)
 
 | Controller | Responsibility |
 |---|---|
@@ -611,6 +617,7 @@ npm start
 | `adminCustomerController.js` | Admin customer management (list, update) |
 | `adminSupportController.js` | Admin support query management |
 | `adminRequestController.js` | Admin service request management (status, OTP) |
+| `adminContactController.js` | Admin contact message management (list, delete) |
 
 ### Backend — Middleware (3 files)
 
@@ -634,7 +641,7 @@ npm start
 | `useContact.js` | Contact form submission |
 | `useLocation.js` | Pincode → address auto-lookup |
 
-### Frontend — Page Components (21 pages total)
+### Frontend — Page Components (22 pages total)
 
 | Page | Route | Description |
 |---|---|---|
@@ -659,12 +666,7 @@ npm start
 | `AdminWorkers.jsx` | `/admin/workers` | Admin worker management |
 | `AdminCustomers.jsx` | `/admin/customers` | Admin customer management |
 | `AdminRequests.jsx` | `/admin/requests` | Admin service request management |
-
----
-
-## License
-
-ISC
+| `AdminContacts.jsx` | `/admin/contacts` | Admin contact message management |
 
 ---
 

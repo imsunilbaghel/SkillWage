@@ -140,7 +140,11 @@ export default function AdminRequests() {
                                 requests.map((req) => (
                                     <tr key={req._id} className="border-b border-slate-100 hover:bg-slate-50">
                                         <td className="px-6 py-4 whitespace-nowrap">
-                                            {new Date(req.createdAt).toLocaleDateString()}
+                                            {new Date(req.createdAt).toLocaleDateString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+                                            <br />
+                                            <span className="text-xs text-slate-400">
+                                                {new Date(req.createdAt).toLocaleTimeString()}
+                                            </span>
                                         </td>
                                         <td className="px-6 py-4">
                                             <div className="font-medium text-slate-800">{req.customer?.fullName || 'Unknown'}</div>
@@ -155,9 +159,9 @@ export default function AdminRequests() {
                                         </td>
                                         <td className="px-6 py-4 uppercase text-xs font-bold tracking-wider">
                                             <span className={`px-2 py-1 rounded-md ${req.status === 'completed' ? 'bg-emerald-100 text-emerald-700' :
-                                                    req.status === 'accepted' ? 'bg-blue-100 text-blue-700' :
-                                                        req.status === 'rejected' ? 'bg-red-100 text-red-700' :
-                                                            'bg-amber-100 text-amber-700'
+                                                req.status === 'accepted' ? 'bg-blue-100 text-blue-700' :
+                                                    req.status === 'rejected' ? 'bg-red-100 text-red-700' :
+                                                        'bg-amber-100 text-amber-700'
                                                 }`}>
                                                 {req.status}
                                             </span>

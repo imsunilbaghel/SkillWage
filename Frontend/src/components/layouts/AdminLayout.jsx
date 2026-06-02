@@ -58,10 +58,6 @@ const AdminLayout = () => {
 
                 <div className="flex-1 overflow-y-auto py-4">
                     <nav className="space-y-1 px-3">
-                        <Link to="/admin/support" className={`group flex items-center px-3 py-2.5 text-sm font-medium rounded-md ${location.pathname === '/admin' ? 'bg-slate-800 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
-                            <MessageSquareWarning className="mr-3 flex-shrink-0 h-5 w-5" />
-                            All Support Queries
-                        </Link>
                         <Link to="/admin/workers" className={`group flex items-center px-3 py-2.5 text-sm font-medium rounded-md ${location.pathname === '/admin/workers' ? 'bg-slate-800 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
                             <LayoutDashboard className="mr-3 flex-shrink-0 h-5 w-5" />
                             Worker Management
@@ -73,6 +69,14 @@ const AdminLayout = () => {
                         <Link to="/admin/requests" className={`group flex items-center px-3 py-2.5 text-sm font-medium rounded-md ${location.pathname === '/admin/requests' ? 'bg-slate-800 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
                             <ClipboardList className="mr-3 flex-shrink-0 h-5 w-5" />
                             Service Requests
+                        </Link>
+                        <Link to="/admin/contacts" className={`group flex items-center px-3 py-2.5 text-sm font-medium rounded-md ${location.pathname === '/admin/contacts' ? 'bg-slate-800 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
+                            <MessageSquareWarning className="mr-3 flex-shrink-0 h-5 w-5" />
+                            Contact Messages
+                        </Link>
+                        <Link to="/admin/support" className={`group flex items-center px-3 py-2.5 text-sm font-medium rounded-md ${location.pathname === '/admin/support' ? 'bg-slate-800 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
+                            <MessageSquareWarning className="mr-3 flex-shrink-0 h-5 w-5" />
+                            All Support Queries
                         </Link>
                     </nav>
                 </div>

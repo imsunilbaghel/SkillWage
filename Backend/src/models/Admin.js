@@ -27,10 +27,6 @@ const adminSchema = new mongoose.Schema(
 
 // Instance Method: Verify password
 adminSchema.methods.isPasswordCorrect = async function (candidatePassword) {
-  // Support plain text passwords if created manually in MongoDB Atlas
-  if (!this.password.startsWith("$2")) {
-    return candidatePassword === this.password;
-  }
   return await bcrypt.compare(candidatePassword, this.password);
 };
 

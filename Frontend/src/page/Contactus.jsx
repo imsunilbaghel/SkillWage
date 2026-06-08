@@ -3,28 +3,18 @@ import image from "/image/contactus.jpg"
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useTranslation } from "react-i18next";
 import { useCreateContact } from "@/hooks/useContact";
+import { contactusSchema } from "@/lib/schemas/contact";
 
 const Contactus = () => {
     const { t } = useTranslation("common");
 
-    const contactusSchema = z.object({
-        fullname: z.string().min(1, t("contactus.fullname_error")),
-        email: z.string().email(t("contactus.email_error")),
-        message: z
-            .string()
-            .refine(
-                (val) => val.trim().split(/\s+/).filter(w => w.length > 0).length >= 10,
-                t("contactus.message_error")
-            ),
-    })
     const contactform = useForm({
-        resolver: zodResolver(contactusSchema),
+        resolver: zodResolver(contactusSchema(t)),
         mode: "onTouched",
         reValidateMode: "onChange",
         defaultValues: {

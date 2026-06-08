@@ -1,16 +1,7 @@
 import Worker from "../models/Worker.js";
 import Customer from "../models/Customer.js";
 import Otp from "../models/Otp.js";
-import nodemailer from "nodemailer";
-
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
+import { transporter } from "../config/nodemailer.js";
 // Generate 6-digit OTP
 const generateOTP = () => Math.floor(100000 + Math.random() * 900000).toString();
 
@@ -80,15 +71,24 @@ export const customerForgotSendOtp = async (req, res, next) => {
       to: email,
       subject: "SkillWage - Password Reset OTP",
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 480px; margin: 0 auto; padding: 20px;">
-          <h2 style="color: #4338ca;">SkillWage Password Reset</h2>
-          <p>Your OTP for password reset is:</p>
-          <div style="background: #f1f5f9; padding: 16px; border-radius: 8px; text-align: center; margin: 16px 0;">
-            <span style="font-size: 32px; font-weight: bold; letter-spacing: 8px; color: #4338ca;">${otp}</span>
+        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+          <div style="background-color: #0f172a; padding: 25px; text-align: center; border-bottom: 4px solid #3b82f6;">
+            <img src="https://skillwage.vercel.app/image/Skillwage.png" alt="SkillWage Logo" style="max-height: 55px;" />
           </div>
-          <p style="color: #64748b; font-size: 14px;">This OTP is valid for <strong>10 minutes</strong>. Do not share it with anyone.</p>
-          <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 20px 0;" />
-          <p style="color: #94a3b8; font-size: 12px;">If you did not request this, please ignore this email.</p>
+          <div style="padding: 30px; background-color: #ffffff; text-align: center;">
+            <h2 style="color: #1e293b; margin-top: 0; font-size: 24px;">Password Reset</h2>
+            <p style="color: #64748b; font-size: 16px; line-height: 1.5; margin-bottom: 25px;">You have requested to reset your password. Please use the One-Time Password (OTP) below to proceed.</p>
+            
+            <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px dashed #cbd5e1; display: inline-block; min-width: 200px;">
+              <span style="font-size: 36px; font-weight: bold; letter-spacing: 8px; color: #3b82f6;">${otp}</span>
+            </div>
+            
+            <p style="color: #ef4444; font-size: 14px; margin-top: 25px; font-weight: 500;">This OTP is valid for <strong>10 minutes</strong>. Do not share it with anyone.</p>
+          </div>
+          <div style="background-color: #f8fafc; padding: 20px; text-align: center; color: #94a3b8; font-size: 13px; border-top: 1px solid #e2e8f0;">
+            If you did not request a password reset, please ignore this email or contact support.<br/><br/>
+            &copy; ${new Date().getFullYear()} SkillWage. All rights reserved.
+          </div>
         </div>
       `,
     });

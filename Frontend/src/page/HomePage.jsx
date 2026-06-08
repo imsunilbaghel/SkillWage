@@ -188,6 +188,22 @@ const HomePage = () => {
 
       </div>
 
+      {/* Footer */}
+      <footer className="w-full py-6 bg-slate-900 border-t border-slate-800">
+        <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between text-sm text-slate-400">
+          <p>&copy; 2026 SkillWage. All rights reserved.</p>
+          <p className="mt-2 md:mt-0">
+            Official Email:{' '}
+            <a
+              href="mailto:skillwageTeam@gmail.com"
+              className="text-blue-400 hover:text-blue-300 transition-colors underline underline-offset-2 font-medium"
+            >
+              skillwageTeam@gmail.com
+            </a>
+          </p>
+        </div>
+      </footer>
+
     </div>
   );
 };

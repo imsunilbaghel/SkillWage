@@ -17,8 +17,8 @@ const startServer = async () => {
     const server = app.listen(PORT, "0.0.0.0", () => {
       console.log(`\SkillWage Server is running on port ${PORT}`);
       console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
-      console.log(`API Base URL: http://localhost:${PORT}/api`);
-      console.log(`Health Check: http://localhost:${PORT}/api/health\n`);
+      console.log(`API Base URL: ${process.env.CORS_ORIGIN}/api`);
+      console.log(`Health Check: ${process.env.CORS_ORIGIN}/api/health\n`);
     });
 
     // Graceful Shutdown 

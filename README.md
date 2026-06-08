@@ -83,7 +83,7 @@
 - **Dual-role login system** — Customers and Workers register and log in separately with phone number + password.
 - **Forgot Password Recovery** — Workers recover via Aadhaar & Date of Birth verification. Customers recover via an Email OTP verification process (valid for 10 minutes).
 - **JWT-based session management** using secure HTTP-only cookies.
-- **Email OTP verification** during registration to validate email ownership.
+<!-- - **Email OTP verification** during registration to validate email ownership. -->
 - **Admin panel** with separate authentication flow (admin accounts are created directly in MongoDB Atlas — no public registration).
 - **Route protection** — Authenticated users cannot access auth pages; non-admin users cannot access the admin panel.
 
@@ -122,10 +122,11 @@ Customer sends request → Worker receives it (Pending)
 - Workers can browse the post feed and reach out to customers.
 
 ### 🛠 Admin Panel (Desktop Only)
-- **Support query management** — View, search, and resolve user support tickets. Admin can set resolution messages.
 - **Worker management** — Full CRUD: search by name/Aadhaar/phone, view profile & Aadhaar images, verify/unverify workers, update any field, and set status messages.
 - **Customer management** — Search and update customer details including address (with pincode auto-lookup).
 - **Service request management** — View all requests with pagination, search by customer/worker phone, change request status via modal, and generate OTPs for accepted requests.
+- **Support query management** — View, search, and resolve user support tickets. Admin can set resolution messages.
+- **Contact us management** — View, and Delete all 
 
 ### 🌍 Internationalization (i18n)
 - Full **English** and **Hindi** language support across the entire user-facing interface.
@@ -206,7 +207,7 @@ Customer sends request → Worker receives it (Pending)
 SkillWage Full Project/
 ├── Backend/                    # Express.js REST API Server
 │   ├── src/
-│   │   ├── config/             # Database connection (MongoDB)
+│   │   ├── config/             # Database connection (MongoDB) / NodeMailer connection (2 config File)
 │   │   ├── controllers/        # Route handler logic (16 controllers)
 │   │   ├── middlewares/        # Auth, error handling, validation (3 middleware files)
 │   │   ├── models/             # Mongoose schemas (8 models)
@@ -312,7 +313,7 @@ SkillWage Full Project/
 |---|---|---|
 | name | String | Admin name |
 | email | String | Unique email |
-| password | String | Plain text or hashed (supports both for Atlas-created accounts) |
+| password | String | Hashed password |
 
 ### Contact
 | Field | Type | Description |
